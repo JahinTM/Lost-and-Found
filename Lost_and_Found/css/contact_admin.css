@@ -1,0 +1,91 @@
+/* Body & Container */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6ff;
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 25px;
+}
+
+/* Table Styles */
+.message-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.message-table th {
+    background: #1a73e8;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.message-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Row hover effect */
+.message-table tr:hover {
+    background-color: #e8f0fe;
+    transition: 0.3s;
+}
+
+/* Buttons */
+.button {
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.review-btn {
+    background-color: #43a047; /* green */
+}
+
+.review-btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #1a73e8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #1558b0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .message-table th, .message-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

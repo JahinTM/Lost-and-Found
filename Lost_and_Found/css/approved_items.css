@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6ff;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.page-title {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 25px;
+}
+
+/* Table styling */
+.approved-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.approved-table th {
+    background: #1a73e8;
+    color: white;
+    padding: 12px;
+}
+
+.approved-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Hover effect for rows */
+.approved-table tr:hover {
+    background: #e8f0fe;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #1558b0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .approved-table {
+        font-size: 14px;
+    }
+}

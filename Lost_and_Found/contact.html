@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Message</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; margin: 0; padding: 0; }
+        .container { width: 40%; margin: 50px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px #ccc; }
+        h2 { text-align: center; margin-bottom: 20px; }
+        input, textarea { width: 100%; padding: 10px; margin: 8px 0 20px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { width: 100%; background-color: #193fba; color: white; padding: 12px; border: none; border-radius: 5px; font-size: 16px; }
+        button:hover { background-color: #1f54db; cursor: pointer; }
+    </style>
+    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Regarding a Report</h2>
+        <form action="contact.jsp" method="post">
+            <label for="student_id">Your Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+
+            <label for="contact_number">Contact Number:</label>
+            <input type="text" id="contact_number" name="contact_number" required>
+
+            <label for="details">Details / Message:</label>
+            <textarea id="details" name="details" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <a href="dashboard2.jsp">Back to Dashboard</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Body & container */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Page title */
+.page-title {
+    color: #1a237e;
+    margin-bottom: 25px;
+}
+
+/* Form styles */
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.report-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.report-form input[type="text"],
+.report-form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1558b0;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
+.success-message {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

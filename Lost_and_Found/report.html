@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Report Lost Item</title>
+  <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="page-title">Report a Lost Item</h2>
+    <form action="report.jsp" method="post" class="report-form">
+      <label for="item">Item Name</label>
+      <input type="text" id="item" name="item" required>
+
+      <label for="reporter_id">Your Student ID</label>
+      <input type="text" id="reporter_id" name="reporter_id" placeholder="e.g., S001" required>
+
+      <label for="floor_no">Floor Number</label>
+      <input type="text" id="floor_no" name="floor_no" placeholder="e.g., 3rd Floor" required>
+
+      <label for="specific_place">Specific Place</label>
+      <input type="text" id="specific_place" name="specific_place" placeholder="e.g., Library, Lab-2" required>
+
+      <input type="submit" value="Submit Report" class="submit-btn">
+    </form>
+    <a href="dashboard2.jsp" class="back-btn">Back to Dashboard</a>
+  </div>
+
+  <script src="js/report.js"></script>
+</body>
+</html>

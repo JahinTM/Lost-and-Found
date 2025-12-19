@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Center container */
+.center-container {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 25px;
+    color: #0072ff;
+}
+
+/* Form inputs and select using class */
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+/* Focus effect */
+.form-input:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 5px rgba(0,114,255,0.5);
+    outline: none;
+}
+
+/* Remove spinner arrows in number inputs (if type="number") */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Submit button */
+.center-container input[type="submit"] {
+    background-color: #0072ff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.center-container input[type="submit"]:hover {
+    background-color: #005bbb;
+}
+
+/* Links */
+.center-container a {
+    text-decoration: none;
+    color: #0072ff;
+    transition: 0.3s;
+}
+
+.center-container a:hover {
+    color: #005bbb;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .center-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

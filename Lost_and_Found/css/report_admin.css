@@ -1,0 +1,105 @@
+/* ===== Page base ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6fb;
+}
+
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+/* ===== Table ===== */
+.report-table {
+    width: 95%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.report-table th,
+.report-table td {
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table-header {
+    background: #1a73e8;
+    color: white;
+}
+
+/* Row hover */
+.report-table tr:not(.table-header):hover {
+    background: #f1f5ff;
+}
+
+/* ===== Status column ===== */
+.cell-status {
+    font-weight: bold;
+}
+
+.cell-status:contains("Approved") {
+    color: green;
+}
+
+.cell-status:contains("Rejected") {
+    color: red;
+}
+
+/* ===== Buttons ===== */
+.button {
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.approve-btn {
+    background: #28a745;
+}
+
+.approve-btn:hover {
+    background: #1e7e34;
+}
+
+.reject-btn {
+    background: #dc3545;
+    margin-left: 5px;
+}
+
+.reject-btn:hover {
+    background: #b02a37;
+}
+
+/* ===== Back link ===== */
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .report-table {
+        font-size: 12px;
+    }
+
+    .button {
+        display: block;
+        margin: 4px 0;
+    }
+}

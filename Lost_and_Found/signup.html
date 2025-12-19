@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Lost & Found</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="center-container">
+    <h2>Create an Account</h2>
+    <form action="signup.jsp" method="post">
+        <input class="form-input" type="text" name="username" placeholder="UserName" required>
+
+        <!-- Changed from number to text -->
+        <input class="form-input" type="text" name="stdid" placeholder="Student ID" 
+               required pattern="[0-9]{9}" maxlength="9"
+               title="Student ID must be exactly 9 digits">
+
+        <input class="form-input" type="password" name="password" placeholder="Password" required>
+        <select class="form-input" name="usertype" required>
+            <option value="">Select User Type</option>
+            <option value="Student">Student</option>
+            <option value="Admin">Admin</option>
+        </select>
+        <input type="submit" value="Sign Up">
+    </form>
+    <br>
+    <a href="login.html">Login</a>
+</div>
+
+    <script src="js/signup.js"></script>
+</body>
+</html>
